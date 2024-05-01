@@ -1,5 +1,6 @@
 package com.kevintorch.permission_launcher
 
+import android.Manifest
 import android.content.Context
 import android.content.DialogInterface
 import android.content.pm.PackageManager
@@ -101,13 +102,13 @@ class PermissionLauncher {
 
     private fun defaultRationaleMessage(permission: String): String {
         return """ 
-            "${permissionName(permission)}" is required to work properly.
+            "${permissionName(permission)}" permission is required to work properly.
             """.trimIndent()
     }
 
     private fun permissionName(permission: String): String {
         val name = permission.replace("android.permission.", "")
         val words = name.split("_")
-        return words.joinToString(" ") { it.replaceFirstChar { it.uppercase() } }
+        return words.joinToString(" ") { it.lowercase().replaceFirstChar { it.uppercase() } }
     }
 }
