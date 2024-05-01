@@ -91,11 +91,23 @@ class PermissionLauncher {
         MaterialAlertDialogBuilder(context) {
         init {
             setTitle("Permission Required")
-            setMessage(rationaleMessage ?: "$permission is required to work properly.")
+            setMessage(rationaleMessage ?: defaultRationaleMessage(permission))
             setPositiveButton("Allow") { dialog: DialogInterface?, which: Int ->
                 launch(permission)
             }
             setNegativeButton("No Thanks", null)
         }
+    }
+
+    private fun defaultRationaleMessage(permission: String): String {
+        return """ 
+            "${permissionName(permission)}" is required to work properly.
+            """.trimIndent()
+    }
+
+    private fun permissionName(permission: String): String {
+        val name = permission.replace("android.permission.", "")
+        val words = name.split("_")
+        return words.joinToString(" ") { it.replaceFirstChar { it.uppercase() } }
     }
 }
