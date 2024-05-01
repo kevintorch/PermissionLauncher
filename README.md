@@ -1,6 +1,6 @@
 # Android Permission Launcher
 
-Easily Request permission with recommended rationale message with default shouldShowRequestPermissionRationale checks.
+Easily Request permission with all the recommendations. e.g. rationale check with shouldShowRequestPermissionRationale .
 
 ### Installation
 
