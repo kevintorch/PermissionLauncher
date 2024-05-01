@@ -40,15 +40,15 @@ dependencies {
     implementation(libs.material)
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("release") {
-            groupId = "com.github.kevintorch.androidUtils"
-            artifactId = "permission_launcher"
-            version = "1.0"
-
-            afterEvaluate {
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
                 from(components["release"])
+
+                groupId = "com.github.kevintorch.androidUtils"
+                artifactId = "permission_launcher"
+                version = "1.0"
             }
         }
     }
