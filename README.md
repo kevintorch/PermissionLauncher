@@ -20,7 +20,7 @@ Step 2. Add the dependency
 
 ```groovy
 dependencies {
-    implementation "com.github.kevintorch:PermissionLauncher:1.0.3"
+    implementation "com.github.kevintorch:PermissionLauncher:1.1.0"
 }
 ```
 
