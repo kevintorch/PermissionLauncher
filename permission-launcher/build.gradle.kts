@@ -9,7 +9,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        minSdk = 21
+        minSdk = 19
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -48,7 +48,7 @@ afterEvaluate {
 
                 groupId = "com.github.kevintorch.androidUtils"
                 artifactId = "permission_launcher"
-                version = "1.0"
+                version = "1.0.4"
             }
         }
     }

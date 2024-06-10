@@ -1,6 +1,5 @@
 package com.kevintorch.permission_launcher
 
-import android.Manifest
 import android.content.Context
 import android.content.DialogInterface
 import android.content.pm.PackageManager
@@ -94,9 +93,9 @@ class PermissionLauncher {
             setTitle("Permission Required")
             setMessage(rationaleMessage ?: defaultRationaleMessage(permission))
             setPositiveButton("Allow") { dialog: DialogInterface?, which: Int ->
-                launch(permission)
+                launcher.launch(permission)
             }
-            setNegativeButton("No Thanks", null)
+            setNegativeButton("Don't Allow", null)
         }
     }
 
