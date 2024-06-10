@@ -24,12 +24,6 @@ dependencies {
 }
 ```
 
-
-> [!NOTE]
-> Requires sdk >= 21
-
-
-
 ### Usage
 ```kotlin
 class MainActivity : AppCompatActivity() {
@@ -60,4 +54,8 @@ permissionLauncher.setEnableRationale(false)   // default is true.
 permissionLauncher.setEnableRationale(true, "Your Cuatom Rationale Message.")
 
 ```
+
+> [!NOTE]
+> Requires sdk >= 21
+
 
