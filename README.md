@@ -24,6 +24,12 @@ dependencies {
 }
 ```
 
+
+> [!NOTE]
+> Requires sdk >= 21
+
+
+
 ### Usage
 ```kotlin
 class MainActivity : AppCompatActivity() {
