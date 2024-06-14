@@ -1,6 +1,6 @@
 # Android Permission Launcher
 
-Easily request permission with new Launcher API and recommended rationale checks like shouldShowRequestPermissionRationale. All with a simple lightweight class and one liner code.
+Easily request permission with new Launcher API and recommended rationale checks like shouldShowRequestPermissionRationale. All with a simple lightweight class and one liner code. It's basically a wrapper class around **Activity Result API** with Rationale Dialog shown to the user.
 
 ### Installation
 
